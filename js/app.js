@@ -12,7 +12,10 @@ angular.module('app', ['facebook'])
         Facebook.login(function(response) {
           console.debug(response);
           // Do something with response.
-        });
+        },{
+           scope: 'user_groups,publish_actions', 
+           return_scopes: true
+         });
       };
 
       $scope.getLoginStatus = function() {
