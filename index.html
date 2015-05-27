@@ -28,7 +28,7 @@
         <div class="col-md-6" ng-show="groupLoaded">
           <h4>Paso 2: Selecciona los grupos</h4>
           <select name="selecter_multiple" class="selecter_5" multiple="multiple" ng-model="groups">
-    				<option ng-repeat="group in fb_groups" value="{{ group.id }}" selecter="">{{ group.name }}</option>
+    				<option ng-repeat="group in fb_groups" value="{{ toJson(group) }}" selecter="">{{ group.name }}</option>
 			    </select>
         </div>
 
@@ -39,11 +39,23 @@
             <hr>
             <h5>Mensaje:</h5>
             <textarea name="message" ng-model="post_content" rows="8" cols="40" class="form-control"></textarea><br>
-            <h5>Imagenes:</h5>
+            <h5>Imagen:</h5>
             <div class="margin_imgs">
               <input ng-model="post_link" placeholder="URL Imagen (opcional)" class="form-control">
             </div>
             <button ng-click="doPost()" class="btn btn-primary" ng-disabled="(!post_content.length && !post_link) || sendingPost">Crear Post</button>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="alert alert-success alert-dismissable" ng-show="successCounter > 0">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <strong>Bien!</strong> se realizaron {{ successCounter }} publicaciones de un total de {{ groups.length }}.
+          </div>
+          <div ng-show="errors.length > 0">
+            <div ng-repeat="err in errors" class="alert alert-danger alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+              <strong>Ups!</strong> fallo la publicacion en {{ err.name }}.
+            </div>
           </div>
         </div>
         <!-- Footer -->

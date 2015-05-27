@@ -26,6 +26,19 @@ angular.module('app').controller('baseCtrl', function($scope, Facebook) {
     $scope.post_link = "";
 
     /**
+     * array de errores
+     */
+    $scope.hasError = false;
+    $scope.errors = [];
+    $scope.successCounter = 0;
+
+    /**
+     * toJson and fromJson
+     */
+     $scope.toJson = angular.toJson;
+     $scope.fromJson = angular.fromJson;
+
+    /**
      * Iniciar Sesion
      */
     $scope.login = function() {
@@ -52,7 +65,10 @@ angular.module('app').controller('baseCtrl', function($scope, Facebook) {
      * Crear posts en los grupos seleccionados
      */
     $scope.doPost = function() {
+      $scope.hasError = false;
+      $scope.successCounter = 0;
       $scope.groups.forEach(function(item){
+        item = $scope.fromJson( item );
         this.sendingPost = true;
         type = "feed";
         obj = {"message": this.post_content};
@@ -61,6 +77,12 @@ angular.module('app').controller('baseCtrl', function($scope, Facebook) {
           type = "photos";
         }
         Facebook.api("/"+item+"/"+type, "POST", obj, function (response) {
+            if(response.error) {
+              $scope.hasError = true;
+              $scope.errors.push({on: item.name, error: response.error});
+            } else {
+              $scope.successCounter++;
+            }
             console.info(response);
         });
         this.sendingPost = false;
