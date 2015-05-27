@@ -76,7 +76,7 @@ angular.module('app').controller('baseCtrl', function($scope, Facebook) {
           obj.url = this.post_link;
           type = "photos";
         }
-        Facebook.api("/"+item+"/"+type, "POST", obj, function (response) {
+        Facebook.api("/"+item.id+"/"+type, "POST", obj, function (response) {
             if(response.error) {
               $scope.hasError = true;
               $scope.errors.push({on: item.name, error: response.error});
