@@ -79,7 +79,7 @@ angular.module('app').controller('baseCtrl', function($scope, Facebook) {
         Facebook.api("/"+item.id+"/"+type, "POST", obj, function (response) {
             if(response.error) {
               $scope.hasError = true;
-              $scope.errors.push({on: item.name, error: response.error});
+              $scope.errors.push({on: item.name, error: response.error.message});
             } else {
               $scope.successCounter++;
             }
