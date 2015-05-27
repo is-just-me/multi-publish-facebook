@@ -53,7 +53,7 @@
             <strong>Bien!</strong> se realizaron {{ successCounter }} publicaciones de un total de {{ groups.length }}.
           </div>
           <br>
-          <div ng-show="errors.length > 0">
+          <div ng-show="hasError">
             <div ng-repeat="err in errors" class="alert alert-danger alert-dismissable">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
               <strong>Ups!</strong> fallo la publicacion en {{ err.on }}.

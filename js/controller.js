@@ -67,6 +67,7 @@ angular.module('app').controller('baseCtrl', function($scope, Facebook) {
     $scope.doPost = function() {
       $scope.hasError = false;
       $scope.successCounter = 0;
+      $scope.errors = [];
       $scope.groups.forEach(function(item){
         item = $scope.fromJson( item );
         this.sendingPost = true;
