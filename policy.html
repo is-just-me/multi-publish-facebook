@@ -1,0 +1,182 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html id="iubenda_policy" class="iubenda_fixed_policy">
+<head>
+<title>Pol&iacute;tica de privacidad de Multi Publish</title>
+<meta content="Esta Aplicaci&oacute;n recoge algunos Datos Personales de sus Usuarios." name="description"/>
+<meta content="privacy policy" name="keywords"/>
+<meta http-equiv="Content-Language" content="es"/>
+<meta name="robots" content="noindex, follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"cff3f9c950","applicationID":"541403","transactionName":"cF4LTEIMD1RURBdDWkdUSkhCChVZUk9nQFxfWAZBHxALV0Y=","queueTime":0,"applicationTime":861,"agent":"js-agent.newrelic.com/nr-632.min.js"}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XAUFU1VADQcBUFFR"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:23,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:24,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3),n.on("fn-start",function(t){var e=t[0];e instanceof Event&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof Event&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=(t(1),t("ee").create()),i=t(2)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t){if(t[1]){var e=t[1];"function"==typeof e?this.wrapped=t[1]=a(e,"nr@wrapped",function(){return i(e,"fn-",null,e.name||"anonymous")}):"function"==typeof e.handleEvent&&i.inPlace(e,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:24,2:25,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState"],"-")},{1:25,2:24,ee:"QJf3ax"}],9:[function(t,e){var n=(t(2),t("ee").create()),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:25,2:24,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=o(t[0],"fn-",null,n)}var r=(t(2),t("ee").create()),o=t(1)(r);e.exports=r,o.inPlace(window,["setTimeout","setInterval","setImmediate"],"setTimer-"),r.on("setTimer-start",n)},{1:25,2:24,ee:"QJf3ax"}],11:[function(t,e){function n(){f.inPlace(this,p,"fn-")}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:7,2:25,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1);t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof XMLHttpRequest&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof XMLHttpRequest&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:11,4:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],14:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:23,2:24,handle:"D5DuLP"}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=(t(2),window),f=c.document,u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:23,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],23:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],24:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],25:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@wrapper",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=!0,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:24,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+<meta http-equiv="date" content="2015-05-27">
+<meta http-equiv="last-modified" content="2015-05-27">
+<meta property="og:title" content="Pol&iacute;tica de privacidad de Multi Publish"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://www.iubenda.com/images/site/fb-image.png"/>
+<meta property="og:site_name" content="iubenda"/>
+<meta property="fb:app_id" content="190131204371223"/>
+<link rel="image_src" href="https://www.iubenda.com/images/site/fb-image.png"/>
+<meta name="viewport" content="width=device-width">
+<link href="/assets/privacy_policy-68e108a4d920ec894c9623041ac2b44b.css" media="screen" rel="stylesheet" type="text/css"/>
+<script src="/assets/privacy_policy-231e794da67a9e142d6f1261005b0d48.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="wbars_all">
+<div class="iub_container iub_base_container">
+<div id="wbars">
+<div class="iub_content legal_pp">
+<div class="iub_header">
+<h1>Pol&iacute;tica de Privacidad de la Facebook App <strong>Multi Publish</strong></h1>
+<p>Para recibir la información sobre sus Datos Personales, la finalidad y las partes con las que se comparte, contacten con el Titular.</p>
+</div>
+<div class="one_line_col">
+<h2>Responsable de Tratamiento de los Datos y Titular</h2>
+</div>
+<div class="one_line_col">
+<h2>Clases de Datos recogidos</h2>
+<p>El Titular no proporciona una lista de categorías de Datos Personales recogidos.</p>
+<p>Otros Datos Personales recogidos pueden encontrarse descritos en otros apartados de la presente pol&iacute;tica de privacidad o en un texto explicativo espec&iacute;fico mostrado contextualmente en el momento de la recogida de dichos Datos.<br/>Los Datos Personales pueden ser proporcionados por el Usuario por su propia voluntad, o bien ser recogidos autom&aacute;ticamente durante la utilizaci&oacute;n de esta Aplicaci&oacute;n.<br/>Salvo que se indique lo contrario, el uso de Cookies – o de otras medios de seguimiento – por esta Aplicaci&oacute;n o por los propietarios de servicios de terceros utilizados por esta Aplicaci&oacute;n tiene como finalidad la identificaci&oacute;n de los Usuarios y el registro de sus preferencias, con la única finalidad de prestar el servicio solicitado por el Usuario.<br/>La negativa del Usuario a proporcionar ciertos Datos Personales podr&iacute;a imposibilitar a esta Aplicaci&oacute;n la prestaci&oacute;n de sus servicios.</p>
+<p>El Usuario asume la responsabilidad por los Datos Personales de terceros publicados o compartidos mediante esta Aplicaci&oacute;n y declara que tiene el consentimiento de dichos terceros para proporcionar los Datos al Titular.</p>
+</div>
+<div class="one_line_col">
+<h2>Modalidad y lugar del Tratamiento de los Datos recogidos</h2>
+<h3>Modalidades de Tratamiento</h3>
+<p>El Responsable de Tratamiento tratar&aacute; los Datos de los Usuarios de manera adecuada y adoptar&aacute; las medidas de seguridad apropiadas para impedir el acceso, la revelaci&oacute;n, alteraci&oacute;n o destrucci&oacute;n no autorizados de los Datos.<br/>El tratamiento de Datos se realiza mediante ordenadores y/o herramientas informáticas, siguiendo procedimientos y modalidades organizativas estrictamente relacionadas con las finalidades señaladas. Además del Responsable de Tratamiento, en algunos casos podrán acceder a los Datos ciertas categorías de personas encargadas relacionadas con el funcionamiento de la página (administración, ventas, marketing, departamento jurídico y de administración de sistemas) o contratistas externos que presten servicios al Responsable de Tratamiento (tales como proveedores externos de servicios técnicos, empresas de mensajería, “hosting providers”, empresas de informática, agencias de comunicación) que serán nombrados por el Titular como Encargados del Tratamiento, si fuera necesario. Se podrá solicitar al Responsable de Tratamiento en cualquier momento una lista actualizada de dichas personas.</p>
+<h3>Lugar</h3>
+<p>Los Datos serán tratados en la sede operativa del Responsable de Tratamiento, así como en otros lugares en los que se encuentren situadas las partes que también estén involucradas en dicho tratamiento. Para más información, por favor póngase en contacto con el Responsable de Tratamiento.</p>
+<h3>Per&iacute;odo de Conservaci&oacute;n</h3>
+<p>Los Datos ser&aacute;n tratados durante el plazo necesario para prestar el servicio solicitado por el Usuario, o el que se requiera en funci&oacute;n de las finalidades descritas en este documento, y el Usuario tendr&aacute; en todo momento la facultad de solicitar la interrupci&oacute;n de su Tratamiento o la cancelaci&oacute;n de los Datos.</p>
+</div>
+<div class="one_line_col">
+<h2>Finalidad del Tratamiento de los Datos recogidos</h2>
+<p>Los Datos Personales utilizados para cada finalidad son descritos en los apartados espec&iacute;ficos de este documento.</p>
+</div>
+<div class="one_line_col">
+<h2>Permisos de Facebook solicitados por esta Aplicaci&oacute;n</h2>
+<p>Esta Aplicaci&oacute;n podr&aacute; solicitar permisos de Facebook que le permitan realizar acciones en la cuenta de Facebook del Usuario y recuperar informaci&oacute;n de ésta, incluyendo Datos Personales.</p>
+<p>Para obtener más información acerca de los siguientes permisos, diríjanse a la <a href="https://developers.facebook.com/docs/authentication/permissions/">documentación de los permisos de Facebook</a> y a la <a href="https://www.facebook.com/about/privacy/">política de privacidad de Facebook</a>.</p>
+<p>
+Los permisos solicitados son los siguientes:
+Informaci&oacute;n b&aacute;sica.
+</p>
+</div>
+<div class="one_line_col">
+<h2>Informaci&oacute;n adicional sobre la recogida de Datos y su tratamiento</h2>
+<h3>Defensa jurídica</h3>
+<p>
+Los Datos Personales del Usuario podrán ser utilizados para la defensa jurídica del Titular en juicio o en las fases prejudiciales previas a un posible pleito derivado del uso abusivo por parte del Usuario de esta Aplicaci&oacute;n o de los servicios relacionados.<br/>El Usuario es consciente de que el Titular puede ser requerido por autoridades públicas a fin de revelar Datos Personales.
+</p>
+<h3>Informaci&oacute;n adicional acerca de los Datos Personales del Usuario</h3>
+<p>
+Adem&aacute;s de las informaciones contenidas en esta pol&iacute;tica de privacidad, esta Aplicaci&oacute;n podr&aacute; proporcionar al Usuario informaci&oacute;n contextual relativa a servicios espec&iacute;ficos o a la recogida y tratamiento de los Datos Personales.
+</p>
+<h3>Log del sistema y mantenimiento</h3>
+<p>
+Por motivos relativos al funcionamiento y el mantenimiento, esta Aplicaci&oacute;n y cualesquiera otros servicios de terceros que se utilicen podr&aacute;n recoger un Log del sistema, esto es, archivos que registren las interacciones y que pueden contener Datos Personales, tales como la direcci&oacute;n IP del Usuario.
+</p>
+<h3>Informaci&oacute;n no contenida en esta pol&iacute;tica de privacidad</h3>
+<p>
+Se podrá solicitar en cualquier momento información adicional sobre la recogida y el tratamiento de los Datos Personales al Responsable de Tratamiento. Encontrará la información de contacto al inicio del presente documento.
+</p>
+<h3>Ejercicio de los derechos por los Titulares de los Datos</h3>
+<p>
+Los titulares a los que se refieren los Datos Personales tienen derecho a obtener en cualquier momento la confirmaci&oacute;n de que estos han sido almacenados por el Responsable de Tratamiento, a conocer su contenido y origen, a verificar su exactitud o solicitar que sean completados, cancelados, actualizados o rectificados, a que sean anonimizados o a que se bloqueen aquellos Datos Personales que est&aacute;n siendo tratados en contravenci&oacute;n de las leyes, as&iacute; como a oponerse a su tratamiento por cualquier motivo leg&iacute;timo. Las solicitudes deber&aacute;n remitirse al Responsable de Tratamiento utilizando los datos de contacto indicados anteriormente.
+</p>
+<h3>Modificaci&oacute;n de esta pol&iacute;tica de privacidad</h3>
+<p>
+El Responsable de Tratamiento se reserva el derecho de modificar esta pol&iacute;tica de privacidad en cualquier momento notific&aacute;ndolo a los Usuarios a través de esta p&aacute;gina. Se recomienda encarecidamente que revisen esta p&aacute;gina con frecuencia, tomando como referencia la fecha de la última modificaci&oacute;n indicada al final. En el caso de que un Usuario esté en desacuerdo con alguna de las modificaciones realizadas a esta Pol&iacute;tica, el Usuario deber&aacute; cesar en el uso de esta Aplicaci&oacute;n y podr&aacute; solicitar al Responsable de Tratamiento que elimine sus Datos Personales. Salvo que se indique lo contrario, la pol&iacute;tica de privacidad vigente en cada momento ser&aacute; de aplicaci&oacute;n a todos los Datos Personales que el Responsable de Tratamiento haya recogido hasta entonces.
+</p>
+<h3>Informaci&oacute;n acerca de esta pol&iacute;tica de privacidad</h3>
+<p>
+El Responsable de Tratamiento es responsable de esta pol&iacute;tica de privacidad, que ha sido redactada a partir de los m&oacute;dulos proporcionados por Iubenda y almacenados en los servidores de Iubenda.
+</p>
+</div>
+<div class="one_line_col">
+<div class="box_primary box_10 definitions expand">
+<h3 class="expand-click w_icon_24 icon_ribbon">
+Definiciones y referencias legales
+</h3>
+<div class="expand-content">
+<h4>Datos Personales (o Datos)</h4>
+<p>Constituye dato personal cualquier informaci&oacute;n relativa a una persona f&iacute;sica, identificada o identificable, aunque sea indirectamente, mediante referencia a cualquier otra informaci&oacute;n, inclusive a un número de identificaci&oacute;n personal.</p>
+<h4>Datos de Uso</h4>
+<p>Los datos personales recogidos de forma autom&aacute;tica por esta Aplicaci&oacute;n (o por servicios de terceros utilizados por esta Aplicaci&oacute;n), que podr&aacute;n incluir: las direcciones IP o nombres de dominio de los ordenadores utilizados por el Usuario que se conecte a esta Aplicaci&oacute;n, las direcciones URI (Uniform Resource Identifier), la hora de la solicitud, el método utilizado para realizar la solicitud al servidor, las dimensiones del archivo obtenido en respuesta, el c&oacute;digo numérico indicando el estado de la respuesta del servidor (resultado satisfactorio, error, etc…), el pa&iacute;s de origen, las caracter&iacute;sticas del navegador y del sistema operativo utilizados por el visitante, las diversas coordenadas temporales de la visita (por ejemplo, el tiempo de permanencia en cada una de las p&aacute;ginas) y los detalles relativos al itinerario seguido dentro de la Aplicaci&oacute;n, con especial referencia a la secuencia de p&aacute;ginas consultadas, a los par&aacute;metros relativos al sistema operativo y al entorno inform&aacute;tico del Usuario.</p>
+<h4>Usuario</h4>
+<p>El individuo que utiliza esta Aplicaci&oacute;n, que debe coincidir con el Titular de los Datos o bien haber sido autorizado por éste y cuyos Datos Personales son objeto de tratamiento.</p>
+<h4>Titular de los Datos</h4>
+<p>La persona f&iacute;sica o jur&iacute;dica a la que se refieren los Datos Personales.</p>
+<h4>Encargado del Tratamiento</h4>
+<p>La persona f&iacute;sica, jur&iacute;dica, administraci&oacute;n pública o cualquier otra instituci&oacute;n, asociaci&oacute;n u organizaci&oacute;n autorizada por el Responsable de Tratamiento a tratar los Datos Personales de conformidad con esta pol&iacute;tica de privacidad.</p>
+<h4>Responsable de Tratamiento (o Propietario)</h4>
+<p>La persona f&iacute;sica, jur&iacute;dica, administraci&oacute;n pública o cualquier otra instituci&oacute;n, asociaci&oacute;n u organizaci&oacute;n con la facultad, incluso solidariamente con otro Responsable de Tratamiento, de tomar decisiones relativas a la finalidad, los métodos de tratamiento de los Datos Personales y los medios utilizados, incluyendo las medidas de seguridad relativas al funcionamiento y el uso de esta Aplicaci&oacute;n. A menos que se especifique lo contrario, el Responsable de Tratamiento es el Propietario de esta Aplicaci&oacute;n.</p>
+<h4>Esta Aplicaci&oacute;n</h4>
+<p>La herramienta de hardware o software mediante la cual se han recogidos los Datos Personales del Usuario.</p>
+<hr/>
+<h4>Informaci&oacute;n legal</h4>
+<p>Aviso a los Usuarios europeos: la presente declaraci&oacute;n de privacidad ha sido redactada en cumplimiento de las obligaciones previstas en el Art. 10 de la Directiva 95/46/CE, y de acuerdo con las disposiciones de la Directiva 2002/58/CE, modificada por la Directiva 2009/136/CE, en materia de Cookies.</p>
+<p>Esta pol&iacute;tica de privacidad se refiere únicamente a esta Aplicaci&oacute;n.</p>
+</div>
+</div>
+</div>
+<div class="iub_footer">
+<p>
+Última revisi&oacute;n: 27 Mayo 2015
+</p>
+<p>
+<a href="//www.iubenda.com" title="iubenda – generador de Políticas de Privacidad">iubenda</a> aloja esta p&aacute;gina y recoge
+<a href="//www.iubenda.com/privacy-policy/877900">algunos Datos Personales</a> acerca de sus usuarios.
+</p>
+<a href="//www.iubenda.com/private/privacy-policy/272766?preview=true" title="Muestra la pol&iacute;tica de privacidad simplificada" class="show_comp_link iframe-preserve an-preserve">Muestra la pol&iacute;tica de privacidad simplificada</a>
+</div>
+<script type="text/javascript">
+  function tryFunc(fName,args){
+    if(typeof window[fName]==='function'){
+      window[fName](args);
+    }else{
+      if(args){
+        // default behaviour is link
+        if(args.href){
+          // default link is target='_blank'
+          window.open(args.href)
+        }
+      }
+    }
+    return false; // inhibit default behaviour
+  }
+</script>
+</div>
+</div>
+<div class="iub_footer">
+<p>Pol&iacute;tica de Privacidad generada con <a href="//www.iubenda.com" class="no_border" title="iubenda"><img alt="iubenda" src="//www.iubenda.com/assets/site/logo_min.png"/></a></p>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+
+    var privacyPolicy = new PrivacyPolicy({
+      id:272766,
+      noBrand:false
+    })
+
+    $(document).ready(function() {
+
+      privacyPolicy.start();
+
+			$(".expand-content").hide();
+			$(".expand").addClass("collapsed");
+			$(".expand .expand-click").click(function () {
+				$(this).parents(".expand").toggleClass("collapsed");
+				$(this).parents(".expand").toggleClass("expanded");
+				$(this).parents(".expand-item").toggleClass("hover");
+				$(this).children('.icon-17').toggleClass("icon-expand");
+				$(this).children('.icon-17').toggleClass("icon-collapse");
+				$(this).parents('.expand').children('.expand-content').slideToggle("fast");
+			});
+
+    });
+
+  </script>
+</body>
+</html>
