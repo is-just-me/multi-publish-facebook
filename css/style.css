@@ -1,0 +1,31 @@
+.navbar-custom {
+  top: 0;
+  left: 0;
+  border: none;
+  border-radius: 0;
+  background-color: rgba(255,255,255,.9);
+  width: 100%;
+  z-index: 2000;
+}
+.navbar-default .navbar-collapse {
+  border-color: #e7e7e7;
+}
+.navbar-brand:hover {
+  color: #4FC1E9 !important;
+}
+.footer {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  color: #F5F7FA !important;
+  padding: 20px;
+  width: 100%;
+  background-color: #48CFAD;
+}
+.footer div,a{
+  color: #F5F7FA !important;
+}
+.margin_imgs {
+  margin-bottom:10px
+}

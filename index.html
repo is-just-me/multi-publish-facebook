@@ -5,16 +5,57 @@
   <title>Multi Publish</title>
   <link rel="stylesheet" href="bower_components/Bootflat/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/Bootflat/bootflat/css/bootflat.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body ng-app="app" ng-controller="authenticationCtrl">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Test bootflat2</h1>
-          <a class="btn btn-primary" ng-click="login()">Flat button</a>
-          <a ng-click="me()" class="btn btn-primary">Probar</a>
+<body ng-app="app" ng-controller="baseCtrl" style="background-color: #f1f2f6;">
+  <nav class="navbar navbar-default navbar-custom" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <span class="navbar-brand">Multi Publish</span>
+          </div>
         </div>
+      </nav>
+    <div class="container" ng-load="login()">
+      <div class="row">
+        <!-- Paso 1 se logeo y se cargaran los grupos-->
+        <div class="col-md-6">
+          <h4>Paso 1: Carga los grupos desde Facebook</h4>
+          <button ng-click="myGroups()" class="btn btn-info" ng-disabled="groupLoaded">Cargar Grupos</button>
+        </div>
+
+        <!-- Paso 2 grupos cargados, seleccionar en cuales publicar-->
+        <div class="col-md-6" ng-show="groupLoaded">
+          <h4>Paso 2: Selecciona los grupos</h4>
+          <select name="selecter_multiple" class="selecter_5" multiple="multiple" ng-model="groups">
+    				<option ng-repeat="group in fb_groups" value="{{ group.id }}" selecter="">{{ group.name }}</option>
+			    </select>
+        </div>
+
+        <!-- Paso 3 contenido a publicar-->
+        <div class="col-md-6" ng-show="groups.length > 0">
+          <h4>Paso 3: rellenar el contenido</h4>
+          <div class="post_content">
+            <hr>
+            <h5>Mensaje:</h5>
+            <textarea name="message" ng-model="post_content" rows="8" cols="40" class="form-control"></textarea><br>
+            <h5>Imagenes:</h5>
+            <div class="margin_imgs">
+              <input ng-model="post_link[0]" placeholder="URL Imagen #1" class="form-control">
+              <br>
+              <input ng-model="post_link[1]" placeholder="URL Imagen #2" class="form-control">
+            </div>
+            <button ng-click="doPost()" class="btn btn-primary" ng-disabled="(!post_content.length && !post_link) || sendingPost">Crear Post</button>
+          </div>
+        </div>
+        <!-- Footer -->
+        <div class="col-md-12">
+            <div class="footer">
+              <div class="container">
+                <div class="footer-copyright text-center">by <a href="http://www.jroure.com/" target="_blank" style="text-decoration:underline">Johan Roure</a></div>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -33,5 +74,7 @@
 
     <!-- Application -->
     <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/directive.js"></script>
 </body>
 </html>
