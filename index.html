@@ -16,12 +16,12 @@
           </div>
         </div>
       </nav>
-    <div class="container" ng-load="login()">
+    <div class="container">
       <div class="row">
         <!-- Paso 1 se logeo y se cargaran los grupos-->
         <div class="col-md-6">
           <h4>Paso 1: Carga los grupos desde Facebook</h4>
-          <button ng-click="myGroups()" class="btn btn-info" ng-disabled="groupLoaded">Cargar Grupos</button>
+          <button ng-click="login()" class="btn btn-info" ng-disabled="groupLoaded">Login</button><button ng-click="myGroups()" class="btn btn-info" ng-disabled="groupLoaded">Cargar Grupos</button>
         </div>
 
         <!-- Paso 2 grupos cargados, seleccionar en cuales publicar-->
